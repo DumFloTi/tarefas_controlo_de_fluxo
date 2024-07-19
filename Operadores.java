@@ -47,34 +47,16 @@ public class Operadores {
         return (nota1 + nota2 + nota3 + nota4) / 4;
     }
     
-    //Mensagem de Apoio, caso a média seja 0
-    public void mensagemMediaZero() {
+    //Mensagem usando if/else e mostrar a respetiva mensagem
+    public void mensagemMedia() {
         double media = calcularMedia();
         if (media == 0) {
             System.out.println("Eita, proxima vez, toca a estudar!");
-        }
-    }
-
-    //Mensagem de Felicitação, caso a média seja maior ou igual que 7
-    public void mensagemMediaMaiorOuIgualSete() {
-        double media = calcularMedia();
-        if (media >= 7) {
+        } else if (media >= 7) {
             System.out.println("Aprovado");
-        }
-    }
-
-    //Mensagem de Felicitação, caso a média seja maior ou igual que 5 e menor que 7
-    public void mensagemMediaMaiorOuIgualCinco() {
-        double media = calcularMedia();
-        if (media >= 5 && media < 7) {
+        } else if (media >= 5 && media < 7) {
             System.out.println("Recuperação");
-        }
-    }
-
-    //Mensagem de Felicitação, caso a média seja menor que 5
-    public void mensagemMediaMenorCinco() {
-        double media = calcularMedia();
-        if (media < 5) {
+        } else {
             System.out.println("Reprovado");
         }
     }

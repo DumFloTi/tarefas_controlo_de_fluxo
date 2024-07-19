@@ -21,10 +21,7 @@ public class Calculo {
 
         //Devolver a média, com mensagem de apoio ou felicitação, dependendo da media
         System.out.println("A média das notas é: " + media);
-        operadores.mensagemMediaZero();
-        operadores.mensagemMediaMaiorOuIgualSete();
-        operadores.mensagemMediaMaiorOuIgualCinco();
-        operadores.mensagemMediaMenorCinco();
+        operadores.mensagemMedia();
 
         scanner.close();
     }
